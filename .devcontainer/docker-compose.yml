@@ -14,6 +14,19 @@ services:
     # Overrides default command so things don't shut down after the process ends.
     command: /bin/sh -c "while sleep 1000; do :; done"
 
+
+  phpmyadmin:
+    build:
+      context: ./phpmyadmin_conf
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      - PMA_ARBITRARY=1
+    ports:
+      - 8080:80  
+    depends_on:
+      - mysql    
+
   mysql:
     image: mysql:8.0
     container_name: mysql-server-80
