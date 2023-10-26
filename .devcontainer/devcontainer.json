@@ -20,7 +20,9 @@
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"ms-python.vscode-pylance",
+				"cweijan.vscode-mysql-client2"
 			]
 		}
 	}

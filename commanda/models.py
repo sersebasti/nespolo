@@ -1,9 +1,11 @@
 from django.db import models
 
 # Create your models here.
-
 # Pizzerie, Cucina, Bar
 class Collection(models.Model):
+    title = models.CharField(max_length=255)
+    
+class Allergeni(models.Model):
     title = models.CharField(max_length=255)
 
 class Promotion(models.Model):
@@ -13,12 +15,10 @@ class Promotion(models.Model):
 class Product(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    unti_price = models.DecimalField(max_digits=6, decimal_places=2)
-    inventory = models.IntegerField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection, on_delete=models.PROTECT)
-    promotions = models.ManyToManyField(Promotion)
-    
+    allergeni = models.ForeignKey(Allergeni,null=True, on_delete=models.SET_NULL)
 
 class Customer(models.Model):
     MEMBERSHIP_BRONZE = 'B'
@@ -37,11 +37,13 @@ class Customer(models.Model):
     birth_date = models.DateField(null=True)
     membership = models.CharField(
         max_length=1, choices=MEMBERSHIP_CHOICES, default=MEMBERSHIP_BRONZE)
+        
     
 class Adress(models.Model):
     street = models.CharField(max_length=255)
     city = models.CharField(max_length=255)
     customer = models.ForeignKey(Customer,on_delete=models.CASCADE)
+    zipcode = models.IntegerField(null=True)
     
     
 class Order(models.Model):
