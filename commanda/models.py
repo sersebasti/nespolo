@@ -5,8 +5,24 @@ from django.db import models
 class Collection(models.Model):
     title = models.CharField(max_length=255)
     
+    
+
+# Pizzerie, Cucina, Bar
+
+
+class TipoProdotto(models.Model):
+    title = models.CharField(max_length=255)
+    description = models.CharField(max_length=255, null=True)    
+    def __str__(self) -> str:
+        return self.title
+
+    
 class Allergeni(models.Model):
     title = models.CharField(max_length=255)
+    def __str__(self) -> str:
+        return self.title
+    class Meta:
+        ordering = ['title']
 
 class Promotion(models.Model):
     description = models.CharField(max_length=255)
@@ -14,11 +30,16 @@ class Promotion(models.Model):
 
 class Product(models.Model):
     title = models.CharField(max_length=255)
-    description = models.TextField()
+    description = models.TextField(null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection, on_delete=models.PROTECT)
-    allergeni = models.ForeignKey(Allergeni,null=True, on_delete=models.SET_NULL)
+    tipo_prodotto = models.ForeignKey(TipoProdotto, null=True, on_delete=models.PROTECT)
+    allergeni = models.ManyToManyField(Allergeni, null=True, blank=True)
+    def __str__(self) -> str:
+        return self.title
+    class Meta:
+        ordering = ['title']
 
 class Customer(models.Model):
     MEMBERSHIP_BRONZE = 'B'
