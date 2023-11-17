@@ -145,3 +145,6 @@ INTERNAL_IPS = [
     "127.0.0.1",
     # ...
 ]
+
+# settings.py
+ALLOWED_HOSTS = ['sergioswebsolutions.ddns.net', 'localhost', '127.0.0.1']
