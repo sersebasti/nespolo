@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <h1>Menu</h1>
+    <ul>
+        {% for item in menu_items %}
+            <li>
+                <strong>{{ item.name }}</strong><br>
+                {{ item.description }}<br>
+                Price: ${{ item.price }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

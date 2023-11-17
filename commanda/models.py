@@ -4,7 +4,8 @@ from django.db import models
 # Pizzerie, Cucina, Bar
 class Collection(models.Model):
     title = models.CharField(max_length=255)
-    
+    def __str__(self) -> str:
+        return self.title
     
 
 # Pizzerie, Cucina, Bar
@@ -19,8 +20,9 @@ class TipoProdotto(models.Model):
     
 class Allergeni(models.Model):
     title = models.CharField(max_length=255)
+    number = models.IntegerField(default=1)
     def __str__(self) -> str:
-        return self.title
+        return  str(self.number) + " - " + self.title
     class Meta:
         ordering = ['title']
 
