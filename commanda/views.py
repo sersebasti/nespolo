@@ -11,14 +11,14 @@ def menu(request):
 
 
 # Create your views here.
-def say_hello(request):
+def hello(request):
     # query_set = Product.objects.all()
     # query_set.filter()
     # list(query_set)
     #for product in query_set:collection__title__contains="Bar"
     #    print(product)
     
-    queryset = Product.objects.all().values('title','price','collection__title').count()
+    queryset = Product.objects.all().values_list('title','price','collection__title')
     
         
     y = "Sergio"

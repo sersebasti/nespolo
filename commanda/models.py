@@ -1,22 +1,18 @@
 from django.db import models
 
-# Create your models here.
+
 # Pizzerie, Cucina, Bar
 class Collection(models.Model):
     title = models.CharField(max_length=255)
     def __str__(self) -> str:
         return self.title
     
-
-# Pizzerie, Cucina, Bar
-
-
+# Bibite, Birre, Antipasti, Pizza ecc...
 class TipoProdotto(models.Model):
     title = models.CharField(max_length=255)
     description = models.CharField(max_length=255, null=True)    
     def __str__(self) -> str:
         return self.title
-
     
 class Allergeni(models.Model):
     title = models.CharField(max_length=255)
@@ -25,10 +21,6 @@ class Allergeni(models.Model):
         return  str(self.number) + " - " + self.title
     class Meta:
         ordering = ['title']
-
-class Promotion(models.Model):
-    description = models.CharField(max_length=255)
-    discount = models.FloatField()
 
 class Product(models.Model):
     title = models.CharField(max_length=255)
@@ -42,6 +34,31 @@ class Product(models.Model):
         return self.title
     class Meta:
         ordering = ['title']
+        
+        
+class Tavolo(models.Model):
+    nome = models.CharField(max_length=255, null=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+            
+class Commanda(models.Model):
+    tavolo = models.ForeignKey(Tavolo, on_delete=models.CASCADE) 
+    product = models.ForeignKey(Product, on_delete=models.PROTECT)
+    quantity = models.PositiveSmallIntegerField()
+    
+    
+class Conto(models.Model):
+    tavolo = models.ForeignKey(Tavolo, on_delete=models.CASCADE)
+    order_date = models.DateTimeField(auto_now_add=True)
+    
+class ContoBakup(models.Model):
+    tavolo = models.CharField(max_length=255, null=False)
+    order_date = models.DateTimeField(null=False, auto_now_add=False)       
+        
+'''
+class Promotion(models.Model):
+    description = models.CharField(max_length=255)
+    discount = models.FloatField()
+
 
 class Customer(models.Model):
     MEMBERSHIP_BRONZE = 'B'
@@ -67,8 +84,9 @@ class Adress(models.Model):
     city = models.CharField(max_length=255)
     customer = models.ForeignKey(Customer,on_delete=models.CASCADE)
     zipcode = models.IntegerField(null=True)
-    
-    
+'''    
+
+'''    
 class Order(models.Model):
     PAYMENT_STATUS_PENDING = 'P'
     PAYMENT_STATUS_COMPLETE = 'C'
@@ -90,7 +108,9 @@ class OrderItem(models.Model):
     product = models.ForeignKey(Product, on_delete=models.PROTECT)
     quantity = models.PositiveSmallIntegerField()
     unit_price = models.DecimalField(max_digits=6, decimal_places=2)
+'''
 
+'''
 class Cart(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -99,3 +119,4 @@ class CartItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.PositiveSmallIntegerField()
+'''

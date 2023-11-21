@@ -3,7 +3,7 @@ from . import views
 
 # URLconf
 urlpatterns = [
-    path('hello/', views.say_hello),
+    path('hello/', views.hello),
     path('menu/', views.menu)
     
 ]
