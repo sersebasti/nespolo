@@ -15,7 +15,7 @@ services:
     command: /bin/sh -c "while sleep 1000; do :; done"
 
 
-  phpmyadmin:
+  phpmyadmin_nespolo:
     build:
       context: ./phpmyadmin_conf
     container_name: phpmyadmin
