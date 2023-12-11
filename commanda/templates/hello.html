@@ -7,9 +7,15 @@
         {% endif %}
 
         <ul>
-            {% for product in products %}
-            <li> {{ product }} </li>
+            {% for ordine in ordini %}
+            <li> {{ ordine }} </li>
             {% endfor %}
         </ul>
+
+        {% if conto %}
+        <h1>Conto {{ conto.row_price__sum }} </h1>
+        {% endif %}
+
+
     </body>
 </html>

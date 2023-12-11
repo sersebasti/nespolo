@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
-    <!--link rel="stylesheet" href="{% static 'css/styles.css' %}"-->
+    
 </head>
 
 <body>
     <h1>Menu</h1>
     <ul>
         {% for item in menu_items %}
+            <li>{{item.collection.title}}</li>
             <li>
                 <strong>{{ item.name }}</strong><br>
                 {{ item.description }}<br>
@@ -19,5 +20,6 @@
             </li>
         {% endfor %}
     </ul>
+    <hr>
 </body>
 </html>

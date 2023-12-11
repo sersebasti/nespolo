@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'commanda',
+    'tags',
     'debug_toolbar'
 ]
 
@@ -81,22 +83,18 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'my_db',
-        'HOST': 'mysql-server-80',
+        'HOST': 'mysql-server-80_nespolo',
         'PORT': '3306',
         'USER': 'root',
         'PASSWORD': 'local'
-    }
-}
-'''
-
-DATABASES = {
-    'default': {
+    },
+    'lite_db': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+    
 }
 
-'''
 
 
 # Password validation
