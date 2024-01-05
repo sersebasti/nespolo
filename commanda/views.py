@@ -1,14 +1,129 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import get_list_or_404, get_object_or_404, render
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Value, Q, F
 from django.db.models.aggregates import Count, Max, Min, Sum
 from django.db import transaction
-from commanda.models import Product
-from commanda.models import Allergeni, Collection, Ordine
+from django_filters.rest_framework import DjangoFilterBackend
 
-def product_list(request):
-    return HttpResponse('ok')
+from commanda.models import Product, Review, Tavolo, Commanda
+from commanda.serializers import ProductSerializer, ReviewSerializer, TavoloSerializer, CommandaSerializer
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.response import Response
+from rest_framework.filters import SearchFilter, OrderingFilter
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.decorators import api_view
+
+
+from pprint import pprint
+
+class TavoloViewSet(ModelViewSet):
+    queryset = Tavolo.objects.all()
+    serializer_class = TavoloSerializer
+
+    
+    def create(self, request, *args, **kwargs):
+        if Tavolo.objects.filter(nome=request.data['nome']).count():
+           return Response({'error': 'Esiste già un tavolo con lo stesso nome: ' + request.data['nome']}) 
+        return super().create(request, *args, **kwargs)    
+    
+    def destroy(self, request, *args, **kwargs):
+        if Tavolo.objects.filter(tavolo_id=kwargs['pk']).count() > 0:
+            return Response({'error': 'Il tavolo non può essere cancellato perchè presente in una commanda'})
+        return super().destroy(request, *args, **kwargs)
+    
+
+class ProductViewSet(ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filterset_fields = ['collection_id', 'tipo_prodotto']
+    #pagination_class = PageNumberPagination
+    search_fields = ['title', 'description']
+    ordering_fields = ['price']
+    
+    def get_serializer_context(self):
+        return {'request': self.request}
+    
+    def destroy(self, request, *args, **kwargs):
+        if Commanda.objects.filter(product_id=kwargs['pk']).count() > 0:
+            return Response({'error': 'Il prodotto non può essere cancellato perchè presente in una commanda'})
+        return super().destroy(request, *args, **kwargs)
+    
+
+class CommandaViewSet(ModelViewSet):
+    queryset = Commanda.objects.all()
+    serializer_class = CommandaSerializer
+
+
+@api_view(['GET'])
+def commande_tavolo(request, id):
+    if request.method == 'GET':
+        query_set = Commanda.objects.filter(tavolo_id = id)
+        serializer = CommandaSerializer(query_set, many=True)
+        return Response(serializer.data)
+
+    
+
+
+
+    
+
+#class ReviewViewSet(ModelViewSet):
+#    queryset = Review.objects.all()
+#    serializer_class = ReviewSerializer    
+    
+    
+    #def create(self, request, *args, **kwargs):   
+    #    pprint(self.serializer_class.fields)
+    #    if Commanda.objects.filter(product_id=request.data['product']).count() > 0 and Commanda.objects.filter(tavolo_id=request.data['tavolo']).count() > 0:
+    #       print('Il prodotto ' + request.data['product'] + ' era già presente al tavolo ' + request.data['tavolo'])
+    #    return super().create(request, *args, **kwargs)
+    
+    
+
+
+'''
+
+@api_view(['GET','POST'])
+def collection_list(request):
+
+    
+    if request.method == 'GET':
+        query_set = Collection.objects.all()
+        serializer = CollectionSerializer(query_set, many=True)
+        return Response(serializer.data)
+    
+    elif request.method == 'POST':
+        serializer = CollectionSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+
+
+
+@api_view(['GET','PUT', 'DELETE'])
+def collection_detail(request, id):
+
+    collection = get_object_or_404(Collection, pk=id)
+    
+    if request.method == 'GET': 
+        serializer = CollectionSerializer(collection)
+        return Response(serializer.data)
+    
+    elif request.method == 'PUT':
+        serializer = CollectionSerializer(collection, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+    
+    elif request.method == 'DELETE':
+    
+        if collection.product_set.count() > 0:
+            return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+        collection.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)   
+
 
 
 def menu(request):
@@ -45,3 +160,51 @@ def hello(request):
     y = "sergio"
     # return HttpResponse('Ciao')
     return render(request,'hello.html',{'name': y, 'conto': conto, "ordini": list(queryset)})
+
+
+
+
+@api_view(['GET','PUT', 'DELETE'])
+def product_detail(request, id):
+
+    product = get_object_or_404(Product, pk=id)
+    
+    
+    
+    
+    if request.method == 'GET': 
+        serializer = ProductSerializer(product)
+        return Response(serializer.data)
+    
+    elif request.method == 'PUT':
+        serializer = ProductSerializer(product, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+    
+    elif request.method == 'DELETE':
+       
+        if product.elementoordine_set.count() > 0:
+            return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+        
+        product.delete()
+        
+        return Response(status=status.HTTP_204_NO_CONTENT)
+'''
+
+
+'''
+@api_view(['GET','POST'])
+def product_list(request):
+    
+    if request.method == 'GET':
+        query_set = Product.objects.select_related('collection').all()
+        serializer = ProductSerializer(query_set, many=True)
+        return Response(serializer.data)
+    
+    elif request.method == 'POST':
+        serializer = ProductSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+'''

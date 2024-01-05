@@ -81,7 +81,7 @@ class TavoloAdmin(admin.ModelAdmin):
 
     custom_action.short_description = 'Mark selected orders as processed'
     
-
+'''
 class ElementoOrdineInline(admin.TabularInline):
     model = models.ElementoOrdine
     autocomplete_fields = ['product']
@@ -99,5 +99,8 @@ class OrdineAdmin(admin.ModelAdmin):
    #     js = ('/commanda/js/admin_disable_links.js', )
 
    #autocomplete_fields = ['product']
+'''
 
-    
+@admin.register(models.Commanda)
+class CommmandaAdmin(admin.ModelAdmin):
+    list_display = ['tavolo', 'product', 'quantity']

@@ -37,13 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     'rest_framework',
     'commanda',
     'tags',
-    'debug_toolbar'
+    'debug_toolbar',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -146,3 +149,15 @@ INTERNAL_IPS = [
 
 # settings.py
 ALLOWED_HOSTS = ['sergioswebsolutions.ddns.net', 'localhost', '127.0.0.1']
+
+
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False,
+    'PAGE_SIZE': 10
+}
+
+
+CORS_ORIGIN_ALLOW_ALL = True 
+CORS_ALLOWED_ORIGINS = [
+   "http://localhost:4200",
+]

@@ -37,26 +37,53 @@ class Product(models.Model):
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection, on_delete=models.PROTECT, null=False)
     tipo_prodotto = models.ForeignKey(TipoProdotto, null=False, on_delete=models.PROTECT)
-    allergeni = models.ManyToManyField(Allergeni, null=True, blank=True)
-    
+    allergeni = models.ManyToManyField(Allergeni, blank=True)
     def __str__(self) -> str:
         return self.title
-    
     class Meta:
         ordering = ['title']
         
         
 class Tavolo(models.Model):
-    nome = models.CharField(max_length=255, null=False)
+    nome = models.CharField(max_length=255, null=False, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    locked = models.BooleanField(default = False)
     
     def __str__(self) -> str:
         return self.nome
-            
+
+
+class Commanda(models.Model):
+    tavolo = models.ForeignKey(Tavolo, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.PROTECT)
+    quantity = models.PositiveIntegerField(default=1)
+    note = models.CharField(max_length=2000, null=True, blank=True)
+    
+    STATUS_PENDING = 'P'
+    STATUS_SENT = 'S'
+    STATUS_COMPLETE = 'C'
+    
+    STATUS = [
+        (STATUS_PENDING, 'SuCommanda'),
+        (STATUS_SENT, 'InProduzione'),
+        (STATUS_COMPLETE, 'Fatto')
+    ]
+    production_status = models.CharField(
+        max_length=1, choices=STATUS, default=STATUS_PENDING)
+    
+
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+    date = models.DateField(auto_now_add=True)
+    
+
+'''           
 class Ordine(models.Model):
     
-    tavolo = models.ForeignKey(Tavolo, unique=True, on_delete=models.PROTECT)
-    
+    tavolo = models.ForeignKey(Tavolo, on_delete=models.PROTECT)
+
     PAYMENT_STATUS_PENDING = 'P'
     PAYMENT_STATUS_COMPLETE = 'C'
     PAYMENT_STATUS_FAILED = 'F'
@@ -70,56 +97,14 @@ class Ordine(models.Model):
         
     placed_at = models.DateTimeField(auto_now_add=True)
 
-class Ordine(models.Model):
-    
-    tavolo = models.ForeignKey(Tavolo, unique=True, on_delete=models.PROTECT)
-    
-    PAYMENT_STATUS_PENDING = 'P'
-    PAYMENT_STATUS_COMPLETE = 'C'
-    PAYMENT_STATUS_FAILED = 'F'
-    PAYMENT_STATUS_CHOICES = [
-        (PAYMENT_STATUS_PENDING, 'Pending'),
-        (PAYMENT_STATUS_COMPLETE, 'Complete'),
-        (PAYMENT_STATUS_FAILED, 'Failed')
-    ]
-    payment_status = models.CharField(
-        max_length=1, choices=PAYMENT_STATUS_CHOICES, default=PAYMENT_STATUS_PENDING)
-        
-    placed_at = models.DateTimeField(auto_now_add=True)
-    
-    
-    #product = models.ForeignKey(Product, on_delete=models.PROTECT)
-    #quantity = models.PositiveSmallIntegerField(default=1)
-    
-    #def conto(self, tav):
-    #    return sum( (product.price * product.quantity) for product in self.product.filter(tavolo = tav))
-        
+     
 class ElementoOrdine(models.Model):
     order = models.ForeignKey(Ordine, on_delete=models.PROTECT)
     product = models.ForeignKey(Product, on_delete=models.PROTECT)
     quantity = models.PositiveIntegerField(default=1)
+'''
 
-
-#class Commanda(models.Model): 
-    #ordine = models.ForeignKey(Ordine,on_delete=models.PROTECT)
-    #created_at = models.DateTimeField(auto_now_add=True)
-    #quantity = models.PositiveSmallIntegerField()
-    #def total_price(self):
-    #    return sum(product.price for product in self.product.all())
-    #def __str__(self):
-    #    return f"Order for {self.tavolo.nome} - Total: ${self.total_price()}"
-
-
-    
-
-
-#class OrderItem(models.Model):
-#    order = models.ForeignKey(Ordine, on_delete=models.CASCADE)
-#    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-#    quantity = models.PositiveIntegerField(default=1)
-       
-    
-    
+'''    
 class Conto(models.Model):
     tavolo = models.ForeignKey(Tavolo, on_delete=models.CASCADE)
     order_date = models.DateTimeField(auto_now_add=True)
@@ -127,7 +112,7 @@ class Conto(models.Model):
 class ContoBakup(models.Model):
     tavolo = models.CharField(max_length=255, null=False)
     order_date = models.DateTimeField(null=False, auto_now_add=False)       
-        
+'''        
 
 
     
