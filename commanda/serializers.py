@@ -30,9 +30,11 @@ class ProductSerializer(serializers.ModelSerializer):
     
 class CommandaSerializer(serializers.ModelSerializer):
     product_title = serializers.ReadOnlyField(source='product.title')
+    product_collection_id = serializers.ReadOnlyField(source='product.collection_id')
+    
     class Meta:
         model = Commanda
-        fields = ['id', 'tavolo', 'product', 'product_title', 'quantity','production_status', 'note']
+        fields = ['id', 'tavolo', 'product', 'product_title', 'product_collection_id', 'quantity','production_status', 'note']
            
         
         

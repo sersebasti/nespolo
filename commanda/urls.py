@@ -12,6 +12,7 @@ router.register('products', views.ProductViewSet)
 router.register('tavoli', views.TavoloViewSet)
 router.register('commande', views.CommandaViewSet)
 
+
 #commande_router = routers.NestedDefaultRouter(router, 'commande', lookup='commande_pk')
 #commande_router.register('tavolo', views.ReviewViewSet, basename='commande-tavolo')
 #pprint(router.urls)
@@ -21,6 +22,11 @@ router.register('commande', views.CommandaViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('commande/tavolo/<int:id>/', views.commande_tavolo),
+    path('commanda_tavolo_status/', views.get_tavolo_status),
+    path('commanda_tavolo_nostatus/', views.get_tavolo_nostatus),
+    path('commanda_collection_status/', views.get_collection_status)
+    
+    
     #path('', include(commande_router.urls)),
     #path('products/', views.ProductList.as_view()),
     #path('products/<int:pk>/', views.ProductDetail.as_view()),

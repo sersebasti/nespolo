@@ -12,6 +12,7 @@ from rest_framework.response import Response
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.decorators import api_view
+from rest_framework.views import APIView
 
 
 from pprint import pprint
@@ -61,6 +62,68 @@ def commande_tavolo(request, id):
         query_set = Commanda.objects.filter(tavolo_id = id)
         serializer = CommandaSerializer(query_set, many=True)
         return Response(serializer.data)
+    
+@api_view(['GET'])
+def get_tavolo_status(request):
+    query_set = Commanda.objects.filter(tavolo = request.GET.get('tavolo', None)).filter(production_status = request.GET.get('production_status', None))
+    serializer = CommandaSerializer(query_set, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+def get_tavolo_nostatus(request):
+    query_set = Commanda.objects.filter(tavolo = request.GET.get('tavolo', None)).filter(~Q(production_status = request.GET.get('production_status', None)))
+    serializer = CommandaSerializer(query_set, many=True)
+    return Response(serializer.data)
+
+
+
+
+@api_view(['GET'])
+def get_collection_status(request):
+    
+    sql = "SELECT * , commanda_product.collection_id FROM commanda_commanda \
+    LEFT JOIN commanda_product ON commanda_commanda.product_id = commanda_product.id \
+    WHERE collection_id = " + request.GET.get('product_collection_id', None) + " \
+    AND production_status = '" + request.GET.get('production_status', None) + "'"   
+    
+    query_set = Commanda.objects.raw(sql)
+    serializer = CommandaSerializer(query_set, many=True)
+    return Response(serializer.data)
+    
+   
+    
+
+    
+    return Response(serialized_data)
+    
+    
+    
+    
+    
+
+
+'''
+
+
+class GetCollectionStatus(CommandaViewSet):
+    
+    queryset = Commanda.objects.all()
+    serializer_class = CommandaSerializer
+    
+    # You can override filter_queryset to add custom filtering logic
+    def filter_queryset(self, queryset):
+        return queryset.filter(production_status=self.request.GET.get('production_status', None)).filter(product_collection_id = self.request.GET.get('product_collection_id', None))
+        
+    
+'''
+    
+    #query_set = Commanda.objects.filter(product_collection_id = request.GET.get('product_collection_id', None)).filter(production_status = request.GET.get('production_status', None))
+    #serializer = CommandaSerializer(query_set, many=True)
+    #return Response(serializer.data)
+
+
+    
 
     
 

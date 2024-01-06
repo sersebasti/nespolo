@@ -59,17 +59,19 @@ class Commanda(models.Model):
     quantity = models.PositiveIntegerField(default=1)
     note = models.CharField(max_length=2000, null=True, blank=True)
     
-    STATUS_PENDING = 'P'
-    STATUS_SENT = 'S'
-    STATUS_COMPLETE = 'C'
+    STATUS_A = 'A'
+    STATUS_B = 'B'
+    STATUS_C = 'C'
+    STATUS_D = 'D'
     
     STATUS = [
-        (STATUS_PENDING, 'SuCommanda'),
-        (STATUS_SENT, 'InProduzione'),
-        (STATUS_COMPLETE, 'Fatto')
+        (STATUS_A, 'SuCommanda'),
+        (STATUS_B, 'InProduzione'),
+        (STATUS_C, 'ProduzioneCompletata'),
+        (STATUS_D, 'Servito'),
     ]
     production_status = models.CharField(
-        max_length=1, choices=STATUS, default=STATUS_PENDING)
+        max_length=1, choices=STATUS, default=STATUS_A)
     
 
 class Review(models.Model):
