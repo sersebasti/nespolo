@@ -3,13 +3,16 @@ services:
   # Update this to the name of the service you want to work with in your docker-compose.yml file
   nespolo:
     build:
-      context: ../
+      context: ./
       dockerfile: ./Dockerfile
     volumes:
       # Update this to wherever you want VS Code to mount the folder of your project
       - ..:/workspaces:cached
     depends_on:
-      - mysql_nespolo 
+      - mysql_nespolo
+
+    ports:
+      - 8000:8000     
       
     # Overrides default command so things don't shut down after the process ends.
     #command: /bin/sh -c "while sleep 1000; do :; done"
@@ -42,7 +45,27 @@ services:
       - MYSQL_PASSWORD=user_pwd
     ports:
       - 3306:3306
-      
+  
+  nespolo-front:
+    build:
+      context: ./front
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./front/app:/app
+    ports:
+      - 4200:4200
+      - 49153:49153
+    working_dir: /app/test  
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true
+
+    command: ng serve --host 0.0.0.0 --disable-host-check -y
+    
+    depends_on:
+      - nespolo 
+
+
 volumes:
   mysql-volume: 
- 

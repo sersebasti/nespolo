@@ -7,7 +7,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from django.http import JsonResponse
 
 from commanda.models import Product, Tavolo, Commanda
-from commanda.serializers import ProductSerializer, TavoloSerializer, CommandaSerializer
+from commanda.serializers import ProductImageSerializer, ProductSerializer, TavoloSerializer, CommandaSerializer
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 from rest_framework.filters import SearchFilter, OrderingFilter
@@ -53,6 +53,12 @@ class ProductViewSet(ModelViewSet):
 class CommandaViewSet(ModelViewSet):
     queryset = Commanda.objects.all()
     serializer_class = CommandaSerializer
+    
+    
+class ProductImageViewSet(ModelViewSet):
+    serializer_class = ProductImageSerializer
+    queryset = ProductImageSerializer
+    
 
 @api_view(['GET'])
 def commande_tavolo(request, id):

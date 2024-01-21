@@ -1,7 +1,7 @@
 from decimal import Decimal
 from rest_framework import serializers
 from commanda.models import Product, Collection, Tavolo, Commanda
-from .models import Product, Review
+from .models import Product, ProductImage, Review
 
 class TavoloSerializer(serializers.ModelSerializer):
     class Meta:
@@ -25,4 +25,11 @@ class CommandaSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Commanda
-        fields = ['id', 'tavolo', 'product', 'product_title', 'product_price', 'product_collection_id', 'quantity','production_status', 'note']    
+        fields = ['id', 'tavolo', 'product', 'product_title', 'product_price', 'product_collection_id', 'quantity','production_status', 'note']  
+        
+
+class ProductImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProductImage
+        fields = ['id', 'image']
+                  

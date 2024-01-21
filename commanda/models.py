@@ -43,6 +43,11 @@ class Product(models.Model):
     class Meta:
         ordering = ['title']
         
+class ProductImage(models.Model):
+    Product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='store/images')
+            
+        
         
 class Tavolo(models.Model):
     nome = models.CharField(max_length=255, null=False, unique=True)
