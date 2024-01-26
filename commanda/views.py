@@ -13,6 +13,14 @@ from rest_framework.response import Response
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
+import logging
+
+logger = logging.getLogger(__name__) # __name__ = commada.views
+
+
+def say_hello(request):
+    logger.info('eccomi')
+    return render(request, 'hello.html', {'name': 'Sergio'})
 
 class TavoloViewSet(ModelViewSet):
     queryset = Tavolo.objects.all()
@@ -102,7 +110,9 @@ def get_collection_status(request):
                                         'product__collection_id','product__title', 'tavolo__nome')
     query_set = query_set.filter(product__collection_id = get_product_collection_id).filter(production_status = get_production_status)
     return JsonResponse(list(query_set), safe=False)
-    
+
+
+
     
     ''' Versionse fatta a mano 
     sql = "SELECT * , commanda_product.collection_id FROM commanda_commanda \

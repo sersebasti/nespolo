@@ -1,0 +1,14 @@
+eccomi
+/workspaces/nespolo/settings.py changed, reloading.
+2024-01-26 17:15:44,251 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-26 17:15:52,964 (INFO - commanda.views - eccomi)
+2024-01-26 17:26:35,643 (INFO - django.utils.autoreload - /workspaces/manage.py changed, reloading.)
+2024-01-26 17:27:32,700 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-26 17:27:38,935 (INFO - commanda.views - eccomi)
+2024-01-26 17:27:56,105 (INFO - django.utils.autoreload - /workspaces/nespolo/wsgi.py changed, reloading.)
+2024-01-26 17:27:57,293 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-26 17:28:34,980 (INFO - django.utils.autoreload - /workspaces/nespolo/wsgi.py changed, reloading.)
+2024-01-26 17:28:36,152 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-26 17:29:04,839 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-26 17:29:06,078 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-26 17:34:03,002 (WARNING - django.request - Not Found: /favicon.ico)
