@@ -12,3 +12,136 @@ eccomi
 2024-01-26 17:29:04,839 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
 2024-01-26 17:29:06,078 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
 2024-01-26 17:34:03,002 (WARNING - django.request - Not Found: /favicon.ico)
+2024-01-26 17:45:24,742 (WARNING - django.request - Not Found: /commanda/product/25)
+2024-01-28 07:32:01,763 (WARNING - django.request - Not Found: /favicon.ico)
+2024-01-28 08:34:51,725 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 08:48:54,139 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 08:49:22,836 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 08:52:07,423 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 08:52:08,507 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 08:52:40,317 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 08:52:41,584 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 08:59:14,109 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 08:59:15,292 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:00:17,094 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:00:18,364 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:04:03,000 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:05:22,233 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:05:23,443 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:06:26,427 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:06:27,559 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:08:55,235 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:14:40,453 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:14:41,648 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:15:08,650 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:15:09,825 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:15:52,621 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:23:57,251 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:23:58,509 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:26:59,872 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:27:01,277 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 09:27:19,644 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 09:27:20,972 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:27:25,905 (WARNING - django.request - Not Found: /favicon.ico)
+2024-01-28 15:32:54,392 (INFO - django.utils.autoreload - /workspaces/nespolo/celery.py changed, reloading.)
+2024-01-28 15:32:55,933 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:35:05,678 (INFO - commanda.views - eccomi)
+2024-01-28 15:36:11,828 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-01-28 15:36:13,461 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:36:21,029 (INFO - commanda.views - eccomi)
+2024-01-28 15:37:13,911 (INFO - commanda.views - eccomi)
+2024-01-28 15:38:09,484 (INFO - commanda.views - eccomi)
+2024-01-28 15:42:54,286 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 15:42:55,662 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:43:23,997 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 15:43:25,371 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:43:53,404 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 15:43:54,803 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:44:06,239 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:46:01,488 (INFO - flower.command - Visit me at http://0.0.0.0:5555)
+2024-01-28 15:46:01,493 (INFO - flower.command - Broker: redis://redis:6379/1)
+2024-01-28 15:46:01,498 (INFO - flower.command - Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'commanda.tasks.notify_customer'])
+2024-01-28 15:46:01,514 (INFO - kombu.mixins - Connected to redis://redis:6379/1)
+2024-01-28 15:46:02,571 (WARNING - flower.inspector - Inspect method active_queues failed)
+2024-01-28 15:46:02,581 (WARNING - flower.inspector - Inspect method reserved failed)
+2024-01-28 15:46:02,581 (WARNING - flower.inspector - Inspect method revoked failed)
+2024-01-28 15:46:02,588 (WARNING - flower.inspector - Inspect method stats failed)
+2024-01-28 15:46:02,589 (WARNING - flower.inspector - Inspect method registered failed)
+2024-01-28 15:46:02,595 (WARNING - flower.inspector - Inspect method scheduled failed)
+2024-01-28 15:46:02,596 (WARNING - flower.inspector - Inspect method active failed)
+2024-01-28 15:46:02,597 (WARNING - flower.inspector - Inspect method conf failed)
+2024-01-28 15:47:23,461 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-01-28 15:47:24,817 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-01-28 15:47:34,889 (INFO - flower.command - Visit me at http://0.0.0.0:5555)
+2024-01-28 15:47:34,894 (INFO - flower.command - Broker: redis://redis:6379/1)
+2024-01-28 15:47:34,898 (INFO - flower.command - Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'commanda.tasks.notify_customer'])
+2024-01-28 15:47:34,913 (INFO - kombu.mixins - Connected to redis://redis:6379/1)
+2024-01-28 15:47:35,956 (WARNING - flower.inspector - Inspect method reserved failed)
+2024-01-28 15:47:35,958 (WARNING - flower.inspector - Inspect method stats failed)
+2024-01-28 15:47:35,966 (WARNING - flower.inspector - Inspect method active_queues failed)
+2024-01-28 15:47:35,967 (WARNING - flower.inspector - Inspect method scheduled failed)
+2024-01-28 15:47:35,967 (WARNING - flower.inspector - Inspect method active failed)
+2024-01-28 15:47:35,968 (WARNING - flower.inspector - Inspect method conf failed)
+2024-01-28 15:47:35,969 (WARNING - flower.inspector - Inspect method revoked failed)
+2024-01-28 15:47:35,972 (WARNING - flower.inspector - Inspect method registered failed)
+2024-01-28 15:48:09,859 (INFO - flower.command - Visit me at http://0.0.0.0:5555)
+2024-01-28 15:48:09,864 (INFO - flower.command - Broker: redis://redis:6379/1)
+2024-01-28 15:48:09,869 (INFO - flower.command - Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'commanda.tasks.notify_customer'])
+2024-01-28 15:48:09,886 (INFO - kombu.mixins - Connected to redis://redis:6379/1)
+2024-01-28 15:48:10,942 (WARNING - flower.inspector - Inspect method scheduled failed)
+2024-01-28 15:48:10,944 (WARNING - flower.inspector - Inspect method stats failed)
+2024-01-28 15:48:10,953 (WARNING - flower.inspector - Inspect method active_queues failed)
+2024-01-28 15:48:10,955 (WARNING - flower.inspector - Inspect method revoked failed)
+2024-01-28 15:48:10,958 (WARNING - flower.inspector - Inspect method active failed)
+2024-01-28 15:48:10,959 (WARNING - flower.inspector - Inspect method registered failed)
+2024-01-28 15:48:10,960 (WARNING - flower.inspector - Inspect method reserved failed)
+2024-01-28 15:48:10,960 (WARNING - flower.inspector - Inspect method conf failed)
+2024-01-28 15:50:14,412 (INFO - commanda.views - eccomi)
+2024-01-28 15:50:27,108 (INFO - flower.command - Visit me at http://0.0.0.0:5555)
+2024-01-28 15:50:27,112 (INFO - flower.command - Broker: redis://redis:6379/1)
+2024-01-28 15:50:27,115 (INFO - flower.command - Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'commanda.tasks.notify_customer'])
+2024-01-28 15:50:27,131 (INFO - kombu.mixins - Connected to redis://redis:6379/1)
+2024-01-28 15:50:37,981 (INFO - commanda.views - eccomi)
+2024-01-28 15:51:43,662 (INFO - commanda.views - eccomi)
+2024-01-28 17:25:08,864 (INFO - commanda.views - eccomi)
+2024-01-28 18:49:57,212 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)

@@ -12,9 +12,10 @@ services:
       - mysql_nespolo 
       
     # Overrides default command so things don't shut down after the process ends.
-    command: /bin/sh -c "while sleep 1000; do :; done"
-    #command: python manage.py runserver 0.0.0.0:8000
-
+    # command: /bin/sh -c "while sleep 1000; do :; done"
+    # command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn nespolo.wsgi
+ 
 
   phpmyadmin_nespolo:
     build:
@@ -42,7 +43,17 @@ services:
       - MYSQL_PASSWORD=user_pwd
     ports:
       - 3306:3306
+
+  redis:
+    image: redis:6.2-alpine
+    container_name: redis
+    ports:
+      - 6379:6379
+    restart: always
+    volumes:
+      - redisdata:/data    
       
 volumes:
-  mysql-volume: 
+  mysql-volume:
+  redisdata: 
  
