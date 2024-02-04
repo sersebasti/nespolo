@@ -12,6 +12,7 @@ router.register('commande', views.CommandaViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('commanda/tavolo/<int:id>/', views.commande_tavolo),
+    path('commanda_tavoli_status/', views.get_tavoli_status),
     path('commanda_tavolo_status/', views.get_tavolo_status), #non utilizzata per ora 
     path('commanda_tavolo_nostatus/', views.get_tavolo_nostatus),
     path('commanda_collection_status/', views.get_collection_status), #non utilizzata forse non serve più

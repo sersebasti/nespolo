@@ -12,9 +12,9 @@ services:
       - mysql_nespolo 
       
     # Overrides default command so things don't shut down after the process ends.
-    # command: /bin/sh -c "while sleep 1000; do :; done"
+    command: /bin/sh -c "while sleep 1000; do :; done"
     # command: python manage.py runserver 0.0.0.0:8000
-    command: gunicorn nespolo.wsgi
+    # command: gunicorn nespolo.wsgi
  
 
   phpmyadmin_nespolo:

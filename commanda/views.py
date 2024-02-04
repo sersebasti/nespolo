@@ -1,10 +1,14 @@
+from unittest import case
+from django.forms import IntegerField
 from django.shortcuts import get_list_or_404, get_object_or_404, render
 
 from django.db.models import Value, Q, F
+from django.db.models import Sum, Case, When, IntegerField
 from django.db.models.aggregates import Count, Max, Min, Sum
 
 from django_filters.rest_framework import DjangoFilterBackend
 from django.http import JsonResponse
+from commanda import models
 
 from commanda.models import Product, Tavolo, Commanda
 from commanda.serializers import ProductImageSerializer, ProductSerializer, TavoloSerializer, CommandaSerializer
@@ -82,6 +86,20 @@ def get_tavolo_status(request):
     query_set = Commanda.objects.filter(tavolo = request.GET.get('tavolo', None)).filter(production_status = request.GET.get('production_status', None))
     serializer = CommandaSerializer(query_set, many=True)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def get_tavoli_status(request):
+    
+    query_set = Commanda.objects.annotate(
+    
+    status_A=Case(
+        When(Q(production_status='A') | Q(production_status='C'), then=F('quantity')),
+        default=0,
+        output_field=IntegerField(),
+    )
+    ).values('tavolo_id').annotate(total_status_A=Sum('status_A'))
+    
+    return JsonResponse(list(query_set), safe=False)
 
 @api_view(['GET'])
 def get_tavolo_nostatus(request):
