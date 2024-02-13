@@ -8,6 +8,8 @@ services:
     volumes:
       # Update this to wherever you want VS Code to mount the folder of your project
       - ..:/workspaces:cached
+    ports:
+      - 8000:8000    
     depends_on:
       - mysql_nespolo 
       
@@ -51,9 +53,10 @@ services:
       - 6379:6379
     restart: always
     volumes:
-      - redisdata:/data    
+      - redisdata:/data
+     
       
 volumes:
   mysql-volume:
-  redisdata: 
+  redisdata:
  

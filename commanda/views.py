@@ -90,6 +90,24 @@ def get_tavolo_status(request):
 @api_view(['GET'])
 def get_tavoli_status(request):
     
+    query_set = Tavolo.objects.annotate(
+    status_A=Sum(
+        Case(
+            When(
+                Q(commanda__production_status='A') | Q(commanda__production_status='C'), 
+                then=Case(
+                    When(commanda__tavolo_id__isnull=True, then=0),
+                    default='commanda__quantity',
+                    output_field=IntegerField(),
+                )
+            ),
+            default=0,
+            output_field=IntegerField()
+        )
+    )
+    ).values('id', 'nome', 'status_A')
+
+    '''
     query_set = Commanda.objects.annotate(
     
     status_A=Case(
@@ -98,6 +116,7 @@ def get_tavoli_status(request):
         output_field=IntegerField(),
     )
     ).values('tavolo_id').annotate(total_status_A=Sum('status_A'))
+    '''
     
     return JsonResponse(list(query_set), safe=False)
 
