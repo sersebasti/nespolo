@@ -53,6 +53,7 @@ class Tavolo(models.Model):
     nome = models.CharField(max_length=255, null=False, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     locked = models.BooleanField(default = False)
+    coperti = models.IntegerField(default = 1)
     
     def __str__(self) -> str:
         return self.nome

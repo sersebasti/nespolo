@@ -6,7 +6,7 @@ from .models import Product, ProductImage, Review
 class TavoloSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tavolo
-        fields = ['id', 'nome', 'locked']   
+        fields = ['id', 'nome', 'locked', 'coperti']   
 
 class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
