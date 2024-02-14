@@ -131,7 +131,7 @@ def get_elementi_conto(request):
     get_tavolo_id = request.GET.get('tavolo', None)
     
     query_set = Commanda.objects.filter(tavolo_id = get_tavolo_id).filter(production_status = 'D')
-    query_set = query_set.values('product__title')
+    query_set = query_set.values('product__title','note')
     query_set = query_set.annotate(
         total_quantity=Sum('quantity'),
         total_price=Sum(F('product__price') * F('quantity'))
