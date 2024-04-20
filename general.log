@@ -748,3 +748,110 @@ django.db.utils.OperationalError: (1054, "Unknown column 'commanda_tavolo.copert
 2024-02-14 01:17:04,740 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
 2024-02-14 01:19:04,148 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
 2024-02-14 01:19:08,596 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-02-14 07:24:26,912 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-02-14 07:26:44,456 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-02-14 07:26:50,380 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-02-14 07:27:00,060 (WARNING - django.request - Not Found: /favicon.ico)
+2024-04-08 07:14:23,505 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:15:00,588 (WARNING - django.request - Not Found: /favicon.ico)
+2024-04-08 07:15:10,127 (WARNING - django.request - Not Found: /commada)
+2024-04-08 07:15:37,150 (WARNING - django.request - Not Found: /commada/produtcs)
+2024-04-08 07:27:18,371 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-04-08 07:27:19,844 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:27:29,856 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-04-08 07:27:31,014 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:28:29,192 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-04-08 07:28:30,362 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:33:00,580 (WARNING - django.request - Not Found: /commanda/commanda)
+2024-04-08 07:34:18,448 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-08 07:34:19,649 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:34:21,322 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-08 07:34:22,482 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:34:29,717 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-08 07:34:30,933 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:34:32,512 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-08 07:34:33,616 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-08 07:35:34,448 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-08 07:35:35,576 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:26:02,134 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:27:06,447 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:28:37,771 (WARNING - django.request - Not Found: /favicon.ico)
+2024-04-20 22:31:59,572 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:01,711 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:32:09,269 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:10,581 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:32:13,999 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:15,371 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:32:21,797 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:23,264 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:32:27,623 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:28,916 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:32:34,257 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:35,728 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:32:40,336 (ERROR - django.request - Internal Server Error: /commanda/commande/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'tavolo_nome' was declared on serializer CommandaSerializer, but has not been included in the 'fields' option.
+2024-04-20 22:32:53,575 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:55,051 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:32:57,847 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:32:59,258 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:33:16,038 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:33:17,410 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:33:42,918 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:33:45,015 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-04-20 22:34:12,354 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-04-20 22:34:13,770 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
