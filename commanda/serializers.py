@@ -19,13 +19,14 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'price', 'description', 'collection', 'tipo_prodotto']  
 
 class CommandaSerializer(serializers.ModelSerializer):
+    tavolo_nome = serializers.ReadOnlyField(source='tavolo.nome')
     product_title = serializers.ReadOnlyField(source='product.title')
     product_collection_id = serializers.ReadOnlyField(source='product.collection_id')
     product_price = serializers.ReadOnlyField(source='product.price')
     
     class Meta:
         model = Commanda
-        fields = ['id', 'tavolo', 'product', 'product_title', 'product_price', 'product_collection_id', 'quantity','production_status', 'note']  
+        fields = ['id', 'tavolo', 'tavolo_nome', 'product', 'product_title', 'product_price', 'product_collection_id', 'quantity','production_status', 'note', 'created_at']  
         
 
 class ProductImageSerializer(serializers.ModelSerializer):
