@@ -2,9 +2,10 @@ from unittest import case
 from django.forms import IntegerField
 from django.shortcuts import get_list_or_404, get_object_or_404, render
 
-from django.db.models import Value, Q, F
+from django.db.models import Value, Q, F, CharField
 from django.db.models import Sum, Case, When, IntegerField
 from django.db.models.aggregates import Count, Max, Min, Sum
+from django.db.models.functions import Coalesce
 
 from django_filters.rest_framework import DjangoFilterBackend
 from django.http import JsonResponse
@@ -150,10 +151,25 @@ def get_collection_status(request):
     query_set = query_set.filter(product__collection_id = get_product_collection_id).filter(production_status = get_production_status)
     return JsonResponse(list(query_set), safe=False)
 
-
+@api_view(['GET'])
+def full(request):
+    
+    #sql = "SELECT * FROM `commanda_tavolo` LEFT JOIN commanda_commanda ON commanda_tavolo.id = commanda_commanda.tavolo_id"
+    query_set = Tavolo.objects.values(
+        'id', 'nome', 'coperti', 
+        'commanda__id', 'commanda__product_id', 
+        'commanda__production_status', 'commanda__note'
+    )
+    
+    return JsonResponse(list(query_set), safe=False)
 
     
-    ''' Versionse fatta a mano 
+    
+    
+    
+    
+
+''' Versionse fatta a mano 
     sql = "SELECT * , commanda_product.collection_id FROM commanda_commanda \
     LEFT JOIN commanda_product ON commanda_commanda.product_id = commanda_product.id \
     WHERE collection_id = " + request.GET.get('product_collection_id', None) + " \
@@ -161,7 +177,7 @@ def get_collection_status(request):
     query_set = Commanda.objects.raw(sql)
     serializer = CommandaSerializer(query_set, many=True)
     return Response(serializer.data) 
-    '''
+'''
     
     
      
