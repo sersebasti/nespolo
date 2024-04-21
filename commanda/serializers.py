@@ -32,7 +32,7 @@ class TavoloSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Tavolo
-        fields = ['id', 'tavolo_nome', 'coperti']   
+        fields = ['id', 'nome', 'coperti']   
         
 
 class ProductImageSerializer(serializers.ModelSerializer):
