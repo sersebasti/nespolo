@@ -12,14 +12,16 @@ from django.http import JsonResponse
 from commanda import models
 
 from commanda.models import Product, Tavolo, Commanda
-from commanda.serializers import ProductImageSerializer, ProductSerializer, TavoloSerializer, CommandaSerializer
+from commanda.serializers import ProductImageSerializer, ProductSerializer, TavoloSerializer, CommandaSerializer, CommandaPartialUpdateSerializer
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
+from rest_framework import generics, status
 from .tasks import notify_customer
 import logging
+
 
 logger = logging.getLogger(__name__) # __name__ = commada.views
 
@@ -68,6 +70,12 @@ class ProductViewSet(ModelViewSet):
 class CommandaViewSet(ModelViewSet):
     queryset = Commanda.objects.all()
     serializer_class = CommandaSerializer
+    
+    def get_serializer_class(self):
+        # Use partial update serializer for PATCH requests
+        if self.request.method == 'PATCH':
+            return CommandaPartialUpdateSerializer
+        return self.serializer_class
     
     
 class ProductImageViewSet(ModelViewSet):
@@ -157,7 +165,7 @@ def full(request):
     #sql = "SELECT * FROM `commanda_tavolo` LEFT JOIN commanda_commanda ON commanda_tavolo.id = commanda_commanda.tavolo_id"
     query_set = Tavolo.objects.values(
         'id', 'nome', 'coperti', 
-        'commanda__id', 'commanda__product_id', 
+        'commanda__id', 'commanda__product_id', 'commanda__quantity',
         'commanda__production_status', 'commanda__note'
     )
     

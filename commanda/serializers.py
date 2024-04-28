@@ -27,6 +27,11 @@ class CommandaSerializer(serializers.ModelSerializer):
         #fields = ['id', 'tavolo', 'tavolo_nome', 'product', 'product_title', 'product_price', 'product_collection_id', 'quantity','production_status', 'note', 'created_at']  
         fields = ['id', 'tavolo', 'tavolo_nome', 'product', 'product_title', 'product_price', 'product_collection_id', 'quantity','production_status', 'note'] 
 
+class CommandaPartialUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Commanda
+        fields = ['quantity', 'note'] 
+
 
 class TavoloSerializer(serializers.ModelSerializer):
     
