@@ -30,7 +30,7 @@ class CommandaSerializer(serializers.ModelSerializer):
 class CommandaPartialUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Commanda
-        fields = ['quantity', 'note'] 
+        fields = ['quantity', 'production_status', 'note'] 
 
 
 class TavoloSerializer(serializers.ModelSerializer):
