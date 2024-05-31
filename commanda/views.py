@@ -6,6 +6,8 @@ from django.db.models import Value, Q, F, CharField
 from django.db.models import Sum, Case, When, IntegerField
 from django.db.models.aggregates import Count, Max, Min, Sum
 from django.db.models.functions import Coalesce
+from django.db.models import Prefetch
+
 
 from django_filters.rest_framework import DjangoFilterBackend
 from django.http import JsonResponse
@@ -167,6 +169,22 @@ def full(request):
         'id', 'nome', 'coperti', 
         'commanda__id', 'commanda__product_id', 'commanda__quantity',
         'commanda__production_status', 'commanda__note'
+    )
+    
+    # Assuming Tavolo has a ForeignKey to Commando
+    query_set = Tavolo.objects.select_related('commanda').values(
+        'id', 'nome', 'coperti', 
+        'commanda__id', 'commanda__product_id', 'commanda__quantity',
+        'commanda__production_status', 'commanda__note'
+    )
+    
+    query_set = Tavolo.objects.prefetch_related(Prefetch('commanda_set', queryset=Commanda.objects.select_related('product'))
+    ).values(
+    'id', 'nome', 'coperti',
+    'commanda__id', 'commanda__product_id', 'commanda__quantity',
+    'commanda__production_status', 'commanda__note','commanda__to_production',
+    'commanda__product__title', 'commanda__product__price', 
+    'commanda__product__collection_id', 'commanda__product__tipo_prodotto_id'
     )
     
     return JsonResponse(list(query_set), safe=False)

@@ -1,6 +1,6 @@
 # Per lo Sviluppo
-1. Prima di aprire la cartella von vscode appurarsi che sia commentato nel docker file: 
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "nespolo.wsgi"]
+1. Prima di aprire la cartella vscode appurarsi che sia commentato nel docker file: 
+# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "nespolo.wsgi"]
 
 2. Con vs code scegliere opzione run in container 
 

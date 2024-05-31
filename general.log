@@ -3326,3 +3326,490 @@ django.core.exceptions.ImproperlyConfigured: Field name `tavolo_nome` is not val
 2024-04-21 16:39:21,668 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
 2024-04-21 16:39:54,755 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
 2024-04-21 16:39:56,924 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-05 09:33:59,712 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-05 09:34:11,634 (WARNING - django.request - Not Found: /favicon.ico)
+2024-05-05 09:34:50,615 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-05-05 09:34:51,976 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-05 09:34:53,840 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-05-05 09:34:55,156 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-05 09:34:57,089 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-05-05 09:34:58,985 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-05 09:36:07,612 (INFO - django.utils.autoreload - /workspaces/commanda/serializers.py changed, reloading.)
+2024-05-05 09:36:08,952 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:29:03,524 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:29:17,085 (WARNING - django.request - Not Found: /favicon.ico)
+2024-05-30 16:31:52,390 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:31:54,196 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:31:58,631 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:31:59,856 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:32:10,059 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:32:11,492 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:32:18,025 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 166, in full
+    query_set = Tavolo.objects.values(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'product' into field. Choices are: commanda, coperti, id, locked, nome
+2024-05-30 16:32:54,486 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:32:56,137 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:35:12,538 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:35:14,141 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:35:32,092 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:35:33,646 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:35:42,635 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:35:44,651 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:35:54,189 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 166, in full
+    query_set = Tavolo.objects.values(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2170, in add_fields
+    cols.append(join_info.transform_function(target, final_alias))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1846, in transform
+    return self.try_transform(wrapped, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1356, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'product_title' for BigAutoField or join on the field not permitted.
+2024-05-30 16:36:37,894 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:36:39,320 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:36:42,343 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 166, in full
+    query_set = Tavolo.objects.values(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2170, in add_fields
+    cols.append(join_info.transform_function(target, final_alias))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1846, in transform
+    return self.try_transform(wrapped, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1356, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'product_collection_id' for BigAutoField or join on the field not permitted.
+2024-05-30 16:37:30,356 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:37:32,058 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:40:59,322 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:41:01,064 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:41:02,540 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:41:03,998 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:41:06,226 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:41:07,899 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:28,353 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:30,238 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:32,744 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:34,574 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:36,832 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:39,075 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:40,975 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:42,818 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:46,285 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:47,830 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:51,247 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:52,634 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:55,629 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:57,233 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:45:58,566 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:45:59,945 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:46:13,176 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:46:14,921 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:46:17,064 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:46:18,642 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:46:20,711 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:46:22,466 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:46:33,286 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:46:34,684 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:46:36,727 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:46:38,007 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:46:46,972 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 179, in full
+    query_set = Tavolo.objects.select_related('commandas__product').values(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'commandas' into field. Choices are: commanda, coperti, id, locked, nome
+2024-05-30 16:47:13,032 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:47:14,656 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:47:17,131 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 179, in full
+    query_set = Tavolo.objects.select_related('commanda__product').values(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'commandas' into field. Choices are: commanda, coperti, id, locked, nome
+2024-05-30 16:47:18,155 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 179, in full
+    query_set = Tavolo.objects.select_related('commanda__product').values(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'commandas' into field. Choices are: commanda, coperti, id, locked, nome
+2024-05-30 16:47:19,991 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 179, in full
+    query_set = Tavolo.objects.select_related('commanda__product').values(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'commandas' into field. Choices are: commanda, coperti, id, locked, nome
+2024-05-30 16:48:09,127 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:48:10,643 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:48:12,600 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:48:13,901 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:48:17,021 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:48:18,654 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:48:21,776 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:48:24,054 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 16:48:51,261 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 16:48:52,919 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 17:02:55,076 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-05-30 17:02:56,780 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 17:07:03,965 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-05-30 17:07:05,871 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 17:07:10,379 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-05-30 17:07:12,338 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 17:07:14,539 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-05-30 17:07:15,834 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 19:25:45,755 (INFO - django.utils.autoreload - /workspaces/commanda/models.py changed, reloading.)
+2024-05-30 19:28:37,294 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 19:28:57,936 (ERROR - django.request - Internal Server Error: /commanda/full/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2161, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1823, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'to_production' into field. Choices are: commanda, coperti, id, locked, nome
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda/views.py", line 182, in full
+    ).values(
+      ^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1308, in _values
+    clone.query.set_values(fields)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2460, in set_values
+    self.add_fields(field_names, True)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 2194, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'to_production' into field. Choices are: commanda, coperti, id, locked, nome
+2024-05-30 19:29:34,237 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 19:29:35,871 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 19:29:38,918 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 19:29:40,176 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 19:29:42,154 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 19:29:44,222 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 19:30:11,247 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 19:30:13,042 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 19:30:15,035 (INFO - django.utils.autoreload - /workspaces/commanda/views.py changed, reloading.)
+2024-05-30 19:30:16,697 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 23:48:18,992 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 23:48:58,416 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 23:50:49,405 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 23:51:14,503 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-30 23:52:02,707 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-31 00:04:40,693 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-31 00:10:53,141 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-05-31 00:11:28,863 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/dev.py changed, reloading.)
+2024-05-31 00:14:09,317 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)

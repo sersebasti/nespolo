@@ -64,6 +64,8 @@ class Commanda(models.Model):
     product = models.ForeignKey(Product, on_delete=models.PROTECT)
     quantity = models.PositiveIntegerField(default=1)
     note = models.CharField(max_length=2000, null=True, blank=True)
+    to_production = models.DateTimeField(null=True)
+    
     
     STATUS_A = 'A'
     STATUS_B = 'B'
