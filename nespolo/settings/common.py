@@ -147,6 +147,7 @@ CORS_ALLOWED_ORIGINS = [
    "http://localhost:4200",
 ]
 
+'''
 CELERY_BROKER_URL = 'redis://redis:6379/1'
 CELERY_BEAT_SCHEDULE = {
     'notify_customers': {
@@ -156,6 +157,7 @@ CELERY_BEAT_SCHEDULE = {
        
     }
 }
+'''
 
 LOGGING = {
     'version': 1,
