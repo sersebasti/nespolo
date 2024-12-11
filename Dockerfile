@@ -28,4 +28,4 @@ USER appuser
 # File wsgi.py was not found. Please enter the Python path to wsgi file.
 
 # scommentater durante il build - commentare durante sviluppo
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "nespolo.wsgi"]
+# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "nespolo.wsgi"]
