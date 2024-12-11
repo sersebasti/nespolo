@@ -1,5 +1,5 @@
 from .common import *
-
+import socket
 
 DEBUG = True
 
@@ -39,3 +39,12 @@ DATABASES = {
     }
     
 }
+
+INSTALLED_APPS += [
+    'debug_toolbar',
+]
+
+
+# Dynamically generate INTERNAL_IPS for local and Docker setups
+hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+INTERNAL_IPS = [ip[: ip.rfind(".")] + ".1" for ip in ips] + ["127.0.0.1"]

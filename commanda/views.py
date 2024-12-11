@@ -10,7 +10,7 @@ from django.db.models import Prefetch
 
 
 from django_filters.rest_framework import DjangoFilterBackend
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from commanda import models
 
 from commanda.models import Product, Tavolo, Commanda
@@ -29,8 +29,11 @@ logger = logging.getLogger(__name__) # __name__ = commada.views
 
 
 def say_hello(request):
-    notify_customer.delay('hello')
-    logger.info('eccomi')
+    
+    #return HttpResponse("ciao")
+
+    #notify_customer.delay('hello')
+    #logger.info('eccomi')
     return render(request, 'hello.html', {'name': 'Sergio'})
 
 class TavoloViewSet(ModelViewSet):

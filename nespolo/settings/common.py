@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'commanda',
     'tags',
-    'debug_toolbar',
     'corsheaders'
 ]
 
@@ -128,12 +127,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-INTERNAL_IPS = [
-    # ...
-    "127.0.0.1",
-    # ...
-]
-
 
 
 REST_FRAMEWORK = {
@@ -186,4 +179,9 @@ LOGGING = {
       }       
     }
     
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,  # Adjust to your desired default page size
 }
