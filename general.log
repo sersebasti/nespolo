@@ -4590,3 +4590,1198 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0'. You 
 2024-12-11 22:37:37,353 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
 2024-12-11 22:37:38,833 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
 2024-12-11 22:49:57,149 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:12:56,874 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/dev.py changed, reloading.)
+2024-12-11 23:12:58,222 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-11 23:32:30,067 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-12-11 23:32:31,494 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-11 23:34:36,355 (INFO - django.utils.autoreload - /workspaces/commanda2/admin.py changed, reloading.)
+2024-12-11 23:34:37,730 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-11 23:34:56,741 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:35:12,036 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:35:19,535 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:43:40,979 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:43:45,405 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:43:50,667 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:44:04,807 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-11 23:44:09,048 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 05:49:36,732 (ERROR - django.security.DisallowedHost - Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2024-12-12 05:49:36,793 (WARNING - django.request - Bad Request: /admin/assets/js/views/login.js)
+2024-12-12 07:25:51,619 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:27:14,413 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:33:10,239 (INFO - django.utils.autoreload - /workspaces/commanda2/models.py changed, reloading.)
+2024-12-12 07:33:11,803 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:35:14,853 (INFO - django.utils.autoreload - /workspaces/commanda2/admin.py changed, reloading.)
+2024-12-12 07:35:16,255 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:37:45,821 (INFO - django.utils.autoreload - /workspaces/commanda2/admin.py changed, reloading.)
+2024-12-12 07:37:47,750 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:38:04,185 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:38:23,401 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:38:38,249 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:38:42,079 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:38:48,789 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:38:57,195 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:38:59,816 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:39:07,526 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:39:14,667 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:39:38,469 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:39:44,381 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:40:16,523 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:44:12,471 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:44:30,255 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:44:32,943 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:44:42,387 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:44:55,338 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:45:30,831 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 07:46:44,004 (INFO - django.utils.autoreload - /workspaces/commanda2/models.py changed, reloading.)
+2024-12-12 07:46:45,688 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:47:21,773 (INFO - django.utils.autoreload - /workspaces/commanda2/admin.py changed, reloading.)
+2024-12-12 07:47:23,074 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:47:31,858 (INFO - django.utils.autoreload - /workspaces/commanda2/admin.py changed, reloading.)
+2024-12-12 07:47:33,161 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 07:48:00,157 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 08:04:18,947 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 08:04:26,897 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 08:25:23,403 (INFO - django.utils.autoreload - /workspaces/nespolo/urls.py changed, reloading.)
+2024-12-12 08:25:24,912 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 08:25:43,454 (WARNING - django.request - Not Found: /commanda2/my_test)
+2024-12-12 08:43:24,664 (ERROR - django.security.DisallowedHost - Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2024-12-12 08:43:24,727 (WARNING - django.request - Bad Request: /admin/assets/js/views/login.js)
+2024-12-12 09:02:59,634 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 09:03:01,031 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 09:04:43,197 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 09:04:44,483 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 09:05:07,897 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 09:05:09,191 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 09:06:04,055 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 9, in my_test
+    return render(request, 'test.html', {'name': 'Sergio'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: test.html
+2024-12-12 09:12:36,231 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 9, in my_test
+    return render(request, 'test.html', {'name': 'Sergio'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: test.html
+2024-12-12 09:14:27,910 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 09:14:29,313 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 09:14:56,475 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 9, in my_test
+    return render(request, 'commanda2/test.html', {'name': 'Sergio'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: commanda2/test.html
+2024-12-12 09:15:10,651 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 09:15:11,871 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 09:19:05,049 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 09:19:06,395 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 09:23:28,154 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 09:23:29,663 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 09:23:35,665 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:01:15,946 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:01:17,225 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:06:00,060 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:06:01,428 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:06:25,967 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:06:27,352 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:06:34,512 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 39, in decorator
+    assert not(isinstance(http_method_names, types.FunctionType)), \
+AssertionError: @api_view missing list of allowed HTTP methods
+2024-12-12 10:06:54,081 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:06:55,422 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:07:50,093 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 10:39:10,500 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 10:40:53,409 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:40:54,803 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:40:56,349 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'price_ser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 18, in my_test
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `price_ser` on serializer `MenuItemSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `list` instance.
+Original exception text was: 'list' object has no attribute 'price_ser'.
+2024-12-12 10:41:53,015 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 10:41:54,299 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:41:57,518 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'price_ser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 18, in my_test
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `price_ser` on serializer `MenuItemSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `list` instance.
+Original exception text was: 'list' object has no attribute 'price_ser'.
+2024-12-12 10:42:12,408 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 10:42:14,045 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:42:16,528 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 10:42:17,944 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:42:19,097 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 10:42:58,656 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:43:57,069 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:50:09,125 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:50:10,464 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:50:20,643 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 10:51:25,894 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:51:27,290 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:51:48,337 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:53:22,692 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:53:24,132 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:53:27,968 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 10:54:02,667 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:54:03,940 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:56:27,292 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:56:28,721 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:56:55,395 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 10:56:56,705 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:57:43,407 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 10:57:44,700 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 10:57:46,970 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 11:03:26,974 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:03:28,334 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:08:04,867 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:08:44,942 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:08:49,750 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 11:09:34,813 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:09:36,231 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:09:38,913 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 11:09:59,490 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 11:10:32,425 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:10:33,874 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:10:35,137 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MenuItem' object has no attribute 'name_ser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 18, in my_test
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name_ser` on serializer `MenuItemSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `MenuItem` instance.
+Original exception text was: 'MenuItem' object has no attribute 'name_ser'.
+2024-12-12 11:10:35,486 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 11:10:59,490 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:11:00,843 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:11:24,488 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:11:26,031 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:11:40,581 (WARNING - django.request - Not Found: /commanda2/test/2)
+2024-12-12 11:16:43,391 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:16:44,829 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:16:59,920 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:17:01,428 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:20:26,301 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:20:27,610 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:20:33,916 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 18, in my_test
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/workspaces/commanda2/serializers.py", line 16, in calculate_tax
+    return  menu_item.price * 1.2;
+        ~~~~~~~~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+2024-12-12 11:21:33,609 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:21:35,048 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:22:27,395 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:22:28,850 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:25:20,864 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:25:22,245 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:25:50,732 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:25:52,084 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:26:10,005 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:26:11,453 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:28:00,394 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:28:01,784 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:28:52,826 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:28:54,334 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:33:20,649 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:33:22,111 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:33:40,824 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:34:14,714 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:36:21,144 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:38:58,111 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:38:59,600 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:39:05,382 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 11:55:39,332 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:55:40,753 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:57:31,085 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 11:57:32,554 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 11:59:58,603 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 12:00:00,193 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:02:20,567 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 12:02:22,013 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:04:19,672 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 12:04:21,157 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:06:51,841 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:06:53,158 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:07:21,905 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:07:23,302 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:09:38,639 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:09:39,941 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:10:13,539 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:10:14,843 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:10:16,895 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 16, in my_test
+    if method.request == 'GET':
+       ^^^^^^
+NameError: name 'method' is not defined
+2024-12-12 12:12:00,575 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:12:02,087 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:13:51,329 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-12-12 12:13:52,231 (INFO - django.utils.autoreload - /workspaces/nespolo/settings/common.py changed, reloading.)
+2024-12-12 12:13:52,826 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:13:54,066 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:16:12,493 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:16:13,897 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:16:17,807 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 23, in my_test
+    return Response(paginator.get_paginated_response(serializer.data))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/pagination.py", line 226, in get_paginated_response
+    ('count', self.page.paginator.count),
+              ^^^^^^^^^
+AttributeError: 'PageNumberPagination' object has no attribute 'page'
+2024-12-12 12:16:18,016 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 12:16:46,874 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:16:48,294 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:16:50,424 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 23, in my_test
+    return Response(paginator.get_paginated_response(serializer.data))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/pagination.py", line 226, in get_paginated_response
+    ('count', self.page.paginator.count),
+              ^^^^^^^^^
+AttributeError: 'PageNumberPagination' object has no attribute 'page'
+2024-12-12 12:18:10,044 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:18:11,511 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:18:36,151 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:18:37,701 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:18:39,252 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 12:21:00,781 (ERROR - django.request - Internal Server Error: /commanda2/test/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'int'>`
+2024-12-12 12:22:15,525 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:22:16,924 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:22:19,877 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 12:24:33,752 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:24:35,115 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:31:46,537 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 12:36:32,335 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 12:36:46,013 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:37:26,873 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:37:28,177 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:38:52,318 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:38:53,640 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:39:06,151 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:39:19,569 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:40:14,128 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:40:14,262 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 12:40:15,714 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:40:15,798 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:40:21,816 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 12:40:30,297 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 12:42:00,422 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 14:08:37,706 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 14:08:39,037 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:11:20,818 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 14:11:22,205 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:12:12,043 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 14:16:14,838 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 14:16:16,274 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:16:23,631 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 14:17:33,391 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 14:20:00,195 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 14:29:36,134 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 14:29:37,608 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:29:42,970 (WARNING - django.request - Not Found: /commanda2/test/1)
+2024-12-12 14:29:57,300 (WARNING - django.request - Not Found: /commanda2/test/2)
+2024-12-12 14:31:03,462 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 14:31:04,913 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:32:51,186 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 14:32:56,204 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 14:32:57,710 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:35:05,947 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 14:35:07,314 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:35:47,939 (WARNING - django.request - Bad Request: /commanda2/test/)
+2024-12-12 14:41:33,930 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 14:41:35,385 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:43:29,617 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 14:43:30,952 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 14:44:24,232 (WARNING - django.request - Bad Request: /commanda2/test/2/)
+2024-12-12 14:44:36,849 (WARNING - django.request - Bad Request: /commanda2/test/2/)
+2024-12-12 14:45:01,794 (ERROR - django.request - Internal Server Error: /commanda2/test/2/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2024-12-12 14:45:04,023 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 14:46:47,829 (ERROR - django.security.DisallowedHost - Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2024-12-12 14:46:47,917 (WARNING - django.request - Bad Request: /admin/assets/js/views/login.js)
+2024-12-12 14:47:23,004 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 14:47:24,330 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 15:03:58,244 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 15:03:59,647 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 15:04:40,361 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 15:04:41,868 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 15:04:44,780 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:11:50,161 (ERROR - django.request - Internal Server Error: /commanda2/test/2/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'str'>`
+2024-12-12 15:14:00,217 (ERROR - django.request - Internal Server Error: /commanda2/test/2/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'str'>`
+2024-12-12 15:15:02,383 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 15:15:03,861 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 15:15:14,937 (WARNING - django.request - Not Found: /commanda2/test/2/)
+2024-12-12 15:15:15,051 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:16:50,397 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:17:53,973 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:18:37,125 (WARNING - django.request - Not Found: /commanda2/test/2/)
+2024-12-12 15:18:38,878 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:19:15,076 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:19:34,426 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:19:42,823 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:20:02,337 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:20:04,654 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 15:22:31,455 (INFO - django.utils.autoreload - /workspaces/commanda2/models.py changed, reloading.)
+2024-12-12 15:22:33,095 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:02:26,664 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:02:40,324 (WARNING - django.request - Not Found: /commanda2/test/2/)
+2024-12-12 17:02:41,029 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 17:02:45,723 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 17:13:49,185 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 17:13:50,503 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:17:23,659 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 17:17:24,919 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:17:43,017 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 17:17:44,435 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:34:09,284 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 17:34:10,749 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:34:24,120 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:35:07,508 (INFO - django.utils.autoreload - /workspaces/commanda2/utils.py changed, reloading.)
+2024-12-12 17:35:07,542 (INFO - django.utils.autoreload - /workspaces/commanda2/utils.py changed, reloading.)
+2024-12-12 17:35:09,435 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:35:09,871 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:36:05,147 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 17:36:06,046 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 17:36:06,631 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:36:07,860 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:36:14,913 (ERROR - django.request - Internal Server Error: /commanda2/test/3/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MeunItemDetails.get() got an unexpected keyword argument 'id'
+2024-12-12 17:37:51,523 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 17:37:52,938 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 17:37:57,240 (ERROR - django.request - Internal Server Error: /commanda2/test/3/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MeunItemDetails.get() got multiple values for argument 'id'
+2024-12-12 17:41:22,616 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 17:41:24,129 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 18:42:20,014 (ERROR - django.security.DisallowedHost - Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+2024-12-12 18:42:20,053 (WARNING - django.request - Bad Request: /admin/assets/js/views/login.js)
+2024-12-12 19:21:22,253 (INFO - django.utils.autoreload - /workspaces/commanda2/models.py changed, reloading.)
+2024-12-12 19:21:23,550 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:21:33,841 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 19:22:18,495 (ERROR - django.request - Internal Server Error: /commanda2/test/54/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 66, in delete
+    menuitem.delete()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1131, in delete
+    collector.collect([self], keep_parents=keep_parents)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/deletion.py", line 355, in collect
+    raise ProtectedError(
+django.db.models.deletion.ProtectedError: ("Cannot delete some instances of model 'MenuItem' because they are referenced through protected foreign keys: 'OrderItem.menu_item'.", {<OrderItem: 2x Antipasto Gustoso (Ordine 1)>})
+2024-12-12 19:29:24,174 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:29:25,533 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:29:29,659 (ERROR - django.request - Internal Server Error: /commanda2/test/54/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 88, in get_object
+    assert lookup_url_kwarg in self.kwargs, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected view MeunItemDetails to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+2024-12-12 19:29:33,487 (ERROR - django.request - Internal Server Error: /commanda2/test/3/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 88, in get_object
+    assert lookup_url_kwarg in self.kwargs, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected view MeunItemDetails to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+2024-12-12 19:29:37,388 (ERROR - django.request - Internal Server Error: /commanda2/test/4/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 88, in get_object
+    assert lookup_url_kwarg in self.kwargs, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected view MeunItemDetails to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+2024-12-12 19:30:13,338 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 19:30:14,771 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:30:48,882 (WARNING - django.request - Not Found: /commanda2/test/55/)
+2024-12-12 19:30:53,766 (WARNING - django.request - Not Found: /commanda2/test/55/)
+2024-12-12 19:30:53,884 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 19:30:57,770 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 19:31:06,203 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 19:31:16,628 (ERROR - django.request - Internal Server Error: /commanda2/test/54/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/generics.py", line 291, in delete
+    return self.destroy(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/base.py", line 1131, in delete
+    collector.collect([self], keep_parents=keep_parents)
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/deletion.py", line 355, in collect
+    raise ProtectedError(
+django.db.models.deletion.ProtectedError: ("Cannot delete some instances of model 'MenuItem' because they are referenced through protected foreign keys: 'OrderItem.menu_item'.", {<OrderItem: 2x Antipasto Gustoso (Ordine 1)>})
+2024-12-12 19:33:44,842 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:33:46,266 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:34:03,196 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 19:34:07,052 (WARNING - django.request - Bad Request: /commanda2/test/54/)
+2024-12-12 19:35:06,253 (INFO - django.utils.autoreload - /workspaces/commanda2/models.py changed, reloading.)
+2024-12-12 19:35:07,537 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:36:21,129 (INFO - django.utils.autoreload - /workspaces/commanda2/models.py changed, reloading.)
+2024-12-12 19:36:22,286 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:40:25,557 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:41:33,003 (WARNING - django.request - Bad Request: /commanda2/menuitems/3/)
+2024-12-12 19:44:21,348 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:44:22,790 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:45:05,205 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 19:45:06,524 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:45:15,536 (WARNING - django.request - Not Found: /commanda2/tables)
+2024-12-12 19:45:15,725 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 19:45:28,232 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 19:45:29,643 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:47:13,286 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 19:47:14,716 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:48:13,294 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 19:48:14,777 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:48:56,255 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:48:57,660 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:49:00,833 (ERROR - django.request - Internal Server Error: /commanda2/tables/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TableList.get() takes 1 positional argument but 2 were given
+2024-12-12 19:49:35,965 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:49:37,647 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:49:39,409 (ERROR - django.request - Internal Server Error: /commanda2/tables/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/commanda2/views.py", line 62, in get
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `nunber` is not valid for model `Table`.
+2024-12-12 19:49:56,271 (INFO - django.utils.autoreload - /workspaces/commanda2/serializers.py changed, reloading.)
+2024-12-12 19:49:57,742 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:50:09,213 (WARNING - django.request - Not Found: /commanda2/tables/1)
+2024-12-12 19:51:35,832 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:51:37,260 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:51:38,365 (WARNING - django.request - Not Found: /commanda2/tables/1)
+2024-12-12 19:51:39,550 (WARNING - django.request - Not Found: /commanda2/tables/1)
+2024-12-12 19:52:39,845 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 19:52:41,258 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:53:35,180 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:53:36,570 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:53:47,461 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:53:49,047 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:53:56,653 (WARNING - django.request - Bad Request: /commanda2/tables/1/)
+2024-12-12 19:54:01,247 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 19:56:26,305 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 19:56:27,766 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:57:02,732 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 19:57:04,127 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 19:57:12,061 (WARNING - django.request - Not Found: /commanda2/collection)
+2024-12-12 19:57:35,133 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 19:57:36,572 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:05:57,063 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 20:05:58,523 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:06:38,379 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 20:06:39,769 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:06:55,119 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:09:40,290 (INFO - django.utils.autoreload - /workspaces/commanda2/views.py changed, reloading.)
+2024-12-12 20:09:41,621 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:19:48,416 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:23:33,068 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:23:50,387 (WARNING - django.request - Not Found: /commanda2/menuitem/77)
+2024-12-12 20:23:57,404 (WARNING - django.request - Not Found: /commanda2/menuitem/50)
+2024-12-12 20:23:57,597 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 20:24:05,585 (WARNING - django.request - Not Found: /favicon.ico)
+2024-12-12 20:26:57,768 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 20:26:59,146 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)
+2024-12-12 20:29:35,131 (INFO - django.utils.autoreload - /workspaces/commanda2/urls.py changed, reloading.)
+2024-12-12 20:29:36,550 (INFO - django.utils.autoreload - Watching for file changes with StatReloader)

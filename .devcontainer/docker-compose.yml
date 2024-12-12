@@ -11,7 +11,8 @@ services:
     ports:
       - 8000:8000    
     depends_on:
-      - mysql_nespolo 
+      - mysql_nespolo
+    #restart: always   
       
     # Overrides default command so things don't shut down after the process ends.
     #command: /bin/sh -c "while sleep 1000; do :; done"
@@ -23,7 +24,7 @@ services:
     build:
       context: ./phpmyadmin_conf
     container_name: phpmyadmin_nespolo
-    restart: always
+    #restart: always
     environment:
       - PMA_ARBITRARY=1
     ports:
@@ -37,7 +38,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password --sql_mode=
     volumes:
       - mysql-volume:/var/lib/mysql
-    restart: always
+    #restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=local
       - MYSQL_DATABASE=my_db

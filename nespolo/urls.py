@@ -25,6 +25,7 @@ admin.site.index_title =  "Admin"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('commanda/', include('commanda.urls')),
+    path('commanda2/', include('commanda2.urls')),
     path("__debug__/", include("debug_toolbar.urls")),
     path('', include('core.urls')),
     
